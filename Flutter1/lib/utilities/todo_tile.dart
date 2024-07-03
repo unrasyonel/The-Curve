@@ -15,7 +15,7 @@ class TodoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(25.0),
+      padding: const EdgeInsets.only(right: 25.0, left: 25.00, top: 25.0),
       child: Container(
         padding: EdgeInsets.all(24),
         child: Row(
@@ -23,8 +23,16 @@ class TodoTile extends StatelessWidget {
             Checkbox(
               value: taskCompleted,
               onChanged: onChanged,
+              activeColor: Colors.teal[900],
             ),
-            Text(taskName),
+
+            Text(
+              taskName,
+              style: TextStyle(decoration: taskCompleted
+              ? TextDecoration.lineThrough
+              : TextDecoration.none)
+            ),
+
           ],
         ),
         decoration: BoxDecoration(
