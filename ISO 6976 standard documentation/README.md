@@ -1,6 +1,6 @@
-ISO 6976 (Natural Gas - Calculation of Values, density, relative density and Wobbe indices from composition)
+# ISO 6976 (Natural Gas - Calculation of Values, density, relative density and Wobbe indices from composition)
 
-# The code is a C++ program that calculates various calorific values based on the ISO 6976 standard.
+The code is a C++ program that calculates various calorific values based on the ISO 6976 standard.
 
 ISO 6976 is an international standard for calculating calorific values of natural gas.
 
